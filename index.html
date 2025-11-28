@@ -55,11 +55,49 @@
             
             box-shadow: 10%;
         }
-        h1, h2, h3{
+        h1, h2, h3{ 
             font-family: "Playfair Display", serif;
         }
         #alpes{
             border-left: #e74c3c;
+        }
+        .fecha{
+            font-size: 90%;
+            color: #7f8c8d;
+        }
+        #subs{
+            text-align: center;
+            margin-top: 3rem;
+            margin-block-end: 3rem;
+            background-color: #ffa4ad;
+        }
+        #formulario{
+            display: inline-block;
+            text-align: left;
+            margin: 1rem;
+            background-color: #fff;
+            padding: 1%;
+            border-radius: 10px;
+        }
+        #formulario div{
+            margin-bottom: 1rem;
+            margin: 20px;
+        }
+        div{
+            margin: 20px;
+        }
+        footer{
+            background-color: #2b3b50;
+            color: #fff;
+            text-align: center;
+        }
+        footer a{
+            color: #fff;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        footer a:hover{
+            text-shadow: 1px 0 0 #667eea9d;
         }
     </style>
 </head>
@@ -82,30 +120,30 @@
 
             <article id="alpes">
                 <h3>Aventura en los Alpes Suizos</h3>
-                <p>Publicado el <time datetime="2024-01-15">15 de Enero, 2024</time></p>
+                <p class="fecha">Publicado el <time datetime="2024-01-15">15 de Enero, 2024</time></p>
                 <p>Descubriendo las montañas más impresionantes de Europa...</p>
                 <button>Leer más</button>
             </article>
 
             <article id="Jpn">
                 <h3>Gastronomía Japonesa: Más que Sushi</h3>
-                <p>Publicado el <time datetime="2024-01-10">10 de Enero, 2024</time></p>
+                <p class="fecha">Publicado el <time datetime="2024-01-10">10 de Enero, 2024</time></p>
                 <p>Explorando los sabores tradicionales de Japón...</p>
                 <button>Leer más</button>
             </article>
         </section>
     </main>
 
-    <section>
-        <h2 id="subs">Suscríbete a nuestro Newsletter</h2>
-        <form>
+    <section id="subs">
+        <h2 >Suscríbete a nuestro Newsletter</h2>
+        <form id="formulario">
             <div>
                 <label>Nombre completo:</label>
                 <input type="text" placeholder="Tu nombre">
             </div>
 
             <div>
-                <label>Correo electrónico:</label>
+                <label id="email">Correo electrónico:</label>
                 <input type="email" placeholder="tu@email.com">
             </div>
 
@@ -131,8 +169,8 @@
             </div>
 
             <div>
-                <button type="submit">Suscribirse</button>
-                <button type="reset">Limpiar formulario</button>
+                <button type="submit" id="subscrition">Suscribirse</button>
+                <button type="reset" id="reset">Limpiar formulario</button>
             </div>
         </form>
     </section>
